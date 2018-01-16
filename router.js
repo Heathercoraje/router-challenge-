@@ -2,12 +2,13 @@ var handlers = require('./handlers');
 
 var routes = {
   '/'  : handlers.read,
-  '/fac':handlers.read,
+  '/workshop':handlers.read,
+  '/project':handlers.read,
   '/stylesheet.css': handlers.read,
   '/js/index.js': handlers.read,
   '/js/request.js': handlers.read,
-  '/api/repos/fac': handlers.api,
-  '/api/repos/dwyl': handlers.api,
+  '/api/repos/workshop': handlers.api,
+  '/api/repos/project': handlers.api,
   '404': handlers.notFound
 };
 

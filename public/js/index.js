@@ -7,7 +7,7 @@
 
   function renderRepos(repos) {
     var view_capitalised = view.toUpperCase();
-    var other_view = view === 'fac' ? 'dwyl' : 'fac';
+    var other_view = view === 'workshop' ? 'project' : 'workshop';
     var other_view_capitalised = other_view.toUpperCase();
 
     var h1 = document.createElement('h1');
