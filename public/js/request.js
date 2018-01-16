@@ -18,7 +18,7 @@ var request = (function () {
     console.log(method,url);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.send(payloadString);
-  };
+  }
 
   function get (url, cb) {
     _request('GET', url, null, cb);
@@ -26,15 +26,15 @@ var request = (function () {
 
   var post = function (url, payload, cb) {
     _request('POST', url, payload, cb);
-   }
+  };
 
   var put = function (url, payload, cb) {
-     _request('PUT', url, payload, cb);
-   }
+    _request('PUT', url, payload, cb);
+  };
 
   var del = function (url, cb) {
     _request('DELETE', url, null, cb);
-  }
+  };
 
   return request = {
     get: get,

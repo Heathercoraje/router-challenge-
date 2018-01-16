@@ -1,7 +1,13 @@
 var handlers = require('./handlers');
 
 var routes = {
-  '/'  : handlers.home,
+  '/'  : handlers.read,
+  '/fac':handlers.read,
+  '/stylesheet.css': handlers.read,
+  '/js/index.js': handlers.read,
+  '/js/request.js': handlers.read,
+  '/api/repos/fac': handlers.api,
+  '/api/repos/dwyl': handlers.api,
   '404': handlers.notFound
 };
 
